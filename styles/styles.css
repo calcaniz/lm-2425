@@ -1,0 +1,98 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    margin:0 auto;
+    background-color: #fcfcfc;
+    line-height: 2rem;
+}
+.background-img {
+    display:block;
+    width:100%;
+    margin:0 auto;
+}
+
+td {
+    vertical-align: top;
+}
+
+.table-nav {
+    width:100%;
+    padding:1rem;
+    background-color: rgb(144, 17, 17);
+    color: #fcfcfc;
+}
+
+.table-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.table-nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.table-nav tr th {
+    padding: 0.5rem;
+}
+
+.table-nav tr td {
+    padding: 0.4rem;
+}
+
+.p-justified {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem auto;
+}
+
+.centrado {
+    display: block;
+    text-align: center;
+}
+
+video, audio, object {
+    width: 100%;
+}
+
+object {
+    height:500px;
+}
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+    padding:0.5rem;
+    margin-top:0.5rem;
+}
+
+.pokedex {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.pokedex thead tr,
+.pokedex tfoot tr {
+    background-color: rgb(144, 17, 17);
+    color: #fff;
+}
+.pokedex tbody tr td{
+    border:1px solid rgb(144, 17, 17);
+}
+
+.p-1{
+    padding:1rem;
+}
+
+.row-plant{
+    background-color: rgba(104, 213, 104,100);
+}
+
+.row-aqua{
+    background-color: rgba(133, 133, 251, 100);
+}
+
+.row-fire{
+    background-color: rgba(249, 108, 108, 100);
+}
