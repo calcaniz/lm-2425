@@ -8,72 +8,105 @@
     </head>
     <body>
 
-        <img class="background-img" alt="background" src="./imgs/background.jpeg" />
-        <table id="table-nav" class="table-nav">
-            <tr>
-                <th><a href="./index.html">Índice Principal</a></th>
-            </tr>
-        </table>
+        <header>        
+            <div class="head-container"></div>
+        </header> 
+        <nav>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="../index.html">Noticias</a></li>
+                    <li><a href="./alta-pokemon.html">Alta Pokemons</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h1>Alta nuevo Pokémon:</h1>
+                <form method="GET" action="./alta-pokemon.html">
+                    <fieldset>
+                        <legend>Autenticación:</legend>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="username">Usuario:</label><br/>
+                                <input class="input-w100" type="text" id="username" name="user" required/>
+                            </div>
+                            <div class="flex-item">
+                                <label for="password">Password:</label><br/>
+                                <input class="input-w100" type="password" id="password" name="pass" required/>
+                            </div>
+                        </div>
 
-        <h1>Alta nuevo Pokémon:</h1>
-        <form method="GET" action="./alta-pokemon.html">
-            <fieldset>
-                <legend>Autenticación:</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos básicos:</legend>
 
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="user" required/>
-                <br/>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="pass" required/>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="nombre">Nombre:</label><br/>
+                                <input class="input-w100" type="text" id="nombre" name="name" required/>                    
+                            </div>
+                            <div class="flex-item">
+                                <label for="num_evo">Número evoluciones:</label><br/>
+                                <input class="input-w100" type="number" id="num_evo" name="evolutions" min="0" max="5" required/>
+                            </div>
+                        </div>
 
-            </fieldset>
-            <fieldset>
-                <legend>Datos básicos:</legend>
+                        
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <input type="checkbox" id="singular" name="singular"/>
+                                <label for="singular">¿Es un pokémon singular?</label>
+                            </div>
+                        </div>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="name" required/>
-                <br/>
-                <label for="num_evo">Número evoluciones:</label>
-                <input type="number" id="num_evo" name="evolutions" min="0" max="5" required/>
-                <br/>
-                <input type="checkbox" id="singular" name="singular"/>
-                <label for="singular">¿Es un pokémon singular?:</label>
-                <br/>
-                <label for="sexo">Introduce el sexo:</label>
-                <input id="sexo" name="sex" type="radio" value="1" required>Másculino
-                <input name="sex" type="radio" value="-1">Femenino
-                <input name="sex" type="radio" value="0">Indeterminado
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Datos de contacto:</legend>
-
-                <label for="telefono">Introduce tu teléfono:</label>
-                <input type="text" id="telefono" name="phone" pattern="[0-9]{10}" required/>
-                <br/>
-                <label for="mail">E-mail de contacto:</label>
-                <input type="email" id="mail" name="mail" required/>
-                <br/>
-            </fieldset>
-
-
-            <fieldset>
-                <legend>Datos de la captura:</legend>
-
-                <label for="color">¿De color era la pokeball?:</label>
-                <input type="color" id="color" name="color" />
-                <br/>
-                <label for="range">Dificulad de captura (0-100):</label>
-                <input type="range" id="range" name="range" min="0" max="100"/>
-                <br/>
-            </fieldset>
-
-                <br/>
-                <input type="reset" value="Reset" />
-                <input type="submit" value="Alta nuevo Pokémon" />
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="sexo">Introduce el sexo:</label>
+                                <input id="sexo" name="sex" type="radio" value="1" required>Másculino
+                                <input name="sex" type="radio" value="-1">Femenino
+                                <input name="sex" type="radio" value="0">Indeterminado
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="telefono">Introduce tu teléfono:</label><br/>
+                                <input class="input-w100" type="text" id="telefono" name="phone" pattern="[0-9]{10}" required/>                        
+                            </div>
+                            <div class="flex-item">
+                                <label for="mail">E-mail de contacto:</label><br/>
+                                <input class="input-w100" type="email" id="mail" name="mail" required/>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <label for="color">¿De color era la pokeball?:</label><br/>
+                                <input type="color" id="color" name="color" />
+                            </div>
+                            <div class="flex-item">
+                                <label for="range">Dificulad de captura (0-100):</label><br/>
+                                <input class="input-w100" type="range" id="range" name="range" min="0" max="100"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <input class="input-w100"  type="reset" value="Reset" />
+                        </div>
+                        <div class="flex-item">
+                            <input class="input-w100" type="submit" value="Alta nuevo Pokémon" />
+                        </div>
+                    </div>
 
 
-        </form>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer-address">
+            <address>
+            Sitio web desarrollado por <a href="mailto:c.alcanizcarbonell@edu.gva.es">Carlos Alcañiz Carbonell</a><br>
+            Todos los derechos reservados &copy; 2024
+            </address>
+        </footer>
     </body>
 </html>

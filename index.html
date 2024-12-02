@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="./styles/styles.css" />
         <title>Web Pokémon</title>
     </head>
     <body>
-        <img class="background-img" alt="background" src="./imgs/background.jpeg" />
-        <table border=1  id="table-nav" class="table-nav">
-            <tr>
-                <th rowspan="2"><a target="_blank" href="./index.html">Noticias</a></th>
-                <th colspan="3">Tipos</th>
-                <th colspan="3">Pokemon</th>
-                <th rowspan="2"><a target="_blank" href="./alta-pokemon.html">Alta Pokemons</a></th>
-            </tr>
-            <tr>
-                <td><a href="./pokemon/types/planta.html">Planta</a></td>
-                <td><a href="./pokemon/types/fuego.html">Fuego</a></td>
-                <td><a href="./pokemon/types/Agua.html">Agua</a></td>
-                <td><a href="./pokemon/pokedex/0001.html">Bulbasaur</a></td>
-                <td><a href="./pokemon/pokedex/0004.html">Charmander</a></td>
-                <td><a href="./pokemon/pokedex/0007.html">Squirtle</a></td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tbody>
-                <tr>
-                    <td width="50%">
-                        <table class="w-100 pokedex">
-                            <thead>
-                                <tr>
-                                    <th>Nº</th>
-                                    <th>Tipo</th>
-                                    <th>Pokémon</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
-                                    <td><a href="./pokemon/pokedex/0001.html">Bulbasaur</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
-                                    <td>Ivysaur</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
-                                    <td>Venusaur</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
-                                    <td><a href="./pokemon/pokedex/0004.html">Squirtle</a></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
-                                    <td>Wartortle</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
-                                    <td>Blastoise</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
-                                    <td><a href="./pokemon/pokedex/0007.html">Charmander</a></td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
-                                    <td>Charmeleon</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
-                                    <td>Charizard</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Nº</th>
-                                    <th>Tipo</th>
-                                    <th>Pokémon</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                        
-                    </td>
-                    <td class="p-1">
-                        <h1>Últimas Noticias:</h1>
+        <header>        
+            <div class="head-container"></div>
+        </header> 
+        <nav>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="./index.html">Noticias</a></li>
+                    <li><a href="./alta-pokemon.html">Alta Pokemons</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="flex-container">
+                <section class="flex-item">
+                    <h1>Pokédex</h1>
+                    <table class="w-100 pokedex">
+                        <thead>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Tipo</th>
+                                <th>Pokémon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
+                                <td><a href="./pokemon/pokedex/0001.html">Bulbasaur</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
+                                <td>Ivysaur</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="row-plant"><a href="./pokemon/types/planta.html">Planta</a></td>
+                                <td>Venusaur</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
+                                <td><a href="./pokemon/pokedex/0004.html">Charmander</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
+                                <td>Charmeleon</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="row-fire"><a href="./pokemon/types/fuego.html">Fuego</a></td>
+                                <td>Charizard</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
+                                <td><a href="./pokemon/pokedex/0007.html">Squirtle</a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
+                                <td>Wartortle</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="row-aqua"><a href="./pokemon/types/agua.html">Agua</a></td>
+                                <td>Blastoise</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Tipo</th>
+                                <th>Pokémon</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section class="flex-item">
+                    <h1>Últimas Noticias:</h1>
+                    <article>
                         <p class="p-justified">
                             The Pokémon Company ha revelado hoy detalles sobre el próximo contenido descargable (DLC) para <em>Pokémon Scarlet y Violet</em>, titulado <strong>"La Máscara Turquesa"</strong>. Este DLC es la primera parte de una expansión en dos partes conocida como <b>El Tesoro Oculto del Área Cero</b>.
                         </p>
@@ -111,13 +109,15 @@
                         <p class="p-justified">
                             ¡Prepárate para nuevas aventuras en el mundo Pokémon! Mantente atento a las actualizaciones en el sitio oficial y en las redes sociales de <em>Pokémon</em>.
                         </p>
-
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-        <hr/>
-        <a class="centrado" href="#table-nav">Índice general</a>
+                    </article>
+                </section>
+            </div>
+       </main>
+        <footer class="footer-address">
+            <address>
+            Sitio web desarrollado por <a href="mailto:c.alcanizcarbonell@edu.gva.es">Carlos Alcañiz Carbonell</a><br>
+            Todos los derechos reservados &copy; 2024
+            </address>
+        </footer>
     </body>
 </html>

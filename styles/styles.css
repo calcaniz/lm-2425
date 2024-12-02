@@ -1,42 +1,70 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
     margin:0 auto;
     background-color: #fcfcfc;
     line-height: 2rem;
-}
-.background-img {
-    display:block;
-    width:100%;
+    width: 80%;
     margin:0 auto;
+    background-color: #f0f0f0;
 }
 
-td {
-    vertical-align: top;
+.head-container {
+    background-image: url('../imgs/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    background-color: black;
 }
 
-.table-nav {
-    width:100%;
+nav {
+    background-color: rgb(144, 17, 17);;
+}
+
+.nav-bar {
+    width: 80%;
+    margin:0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.nav-bar ul li{
+    color: white;
+    margin:0 2rem;
+    cursor:pointer;
     padding:1rem;
-    background-color: rgb(144, 17, 17);
-    color: #fcfcfc;
 }
 
-.table-nav a {
+.nav-bar ul li a{
+    color:white;
     text-decoration: none;
-    color: white;
+    font-size: 16px;
 }
 
-.table-nav a:hover {
-    text-decoration: underline;
-    color: white;
-}
-.table-nav tr th {
-    padding: 0.5rem;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    gap: 0px; /* Espacio entre los elementos */
+    padding: 10px;
 }
 
-.table-nav tr td {
-    padding: 0.4rem;
+/* Elementos dentro del contenedor */
+.flex-item {
+    flex: 1 1 50%; /* Ocupa 50% del ancho del contenedor */
+    color: black;
+    padding: 1rem;
+    box-sizing: border-box; /* Incluye padding y borde dentro del tamaño */
 }
 
 .p-justified {
@@ -95,4 +123,32 @@ object {
 
 .row-fire{
     background-color: rgba(249, 108, 108, 100);
+}
+
+
+address {
+    font-style: normal; /* Por defecto, <address> aplica cursiva, aquí lo normalizamos */
+    line-height: 1.5;
+    color: #555;
+}
+
+.footer-address {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    padding:1rem;
+}
+
+form fieldset {
+    border-radius:1rem;
+}
+
+.input-w100 {
+    padding:0.5rem;
+    width:100%;
+    border-radius: 0.2rem;
 }
