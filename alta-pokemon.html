@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <title>Alta Pokémon</title>
+    </head>
+    <body>
+
+        <img class="background-img" alt="background" src="./imgs/background.jpeg" />
+        <table id="table-nav" class="table-nav">
+            <tr>
+                <th><a href="./index.html">Índice Principal</a></th>
+            </tr>
+        </table>
+
+        <h1>Alta nuevo Pokémon:</h1>
+        <form method="GET" action="./alta-pokemon.html">
+            <fieldset>
+                <legend>Autenticación:</legend>
+
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="user" required/>
+                <br/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="pass" required/>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos básicos:</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required/>
+                <br/>
+                <label for="num_evo">Número evoluciones:</label>
+                <input type="number" id="num_evo" name="evolutions" min="0" max="5" required/>
+                <br/>
+                <input type="checkbox" id="singular" name="singular"/>
+                <label for="singular">¿Es un pokémon singular?:</label>
+                <br/>
+                <label for="sexo">Introduce el sexo:</label>
+                <input id="sexo" name="sex" type="radio" value="1" required>Másculino
+                <input name="sex" type="radio" value="-1">Femenino
+                <input name="sex" type="radio" value="0">Indeterminado
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de contacto:</legend>
+
+                <label for="telefono">Introduce tu teléfono:</label>
+                <input type="text" id="telefono" name="phone" pattern="[0-9]{10}" required/>
+                <br/>
+                <label for="mail">E-mail de contacto:</label>
+                <input type="email" id="mail" name="mail" required/>
+                <br/>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Datos de la captura:</legend>
+
+                <label for="color">¿De color era la pokeball?:</label>
+                <input type="color" id="color" name="color" />
+                <br/>
+                <label for="range">Dificulad de captura (0-100):</label>
+                <input type="range" id="range" name="range" min="0" max="100"/>
+                <br/>
+            </fieldset>
+
+                <br/>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Alta nuevo Pokémon" />
+
+
+        </form>
+    </body>
+</html>
